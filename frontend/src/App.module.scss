@@ -1,0 +1,100 @@
+.App {
+  width: 500px;
+  margin: auto;
+
+  font-size: 18px;
+
+  .Header {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .Input {
+    width: 100%;
+    font-size: 40px;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+
+  .Keyboard {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .Button {
+      //height: 60px;
+      background-color: #fff;
+      border-radius: 3px;
+      border: 1px solid #c4c4c4;
+      background-color: transparent;
+      font-size: 2rem;
+      color: #333;
+      background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+      text-shadow: 0 1px rgba(255,255,255,.4);
+
+      &:hover {
+        background-color: #eaeaea;
+      }
+    }
+
+    .Operator {
+      color: #337cac;
+    }
+
+    .AC {
+      background-color: #f0595f;
+      border-color: #b0353a;
+      color: #fff;
+
+      &:hover {
+        background-color: #f17377;
+      }
+    }
+
+    .OpenBracket {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+
+    .CloseBracket {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    .EQ {
+      background-color: #2e86c0;
+      border-color: #337cac;
+      color: #fff;
+
+      grid-row-start: 4;
+      grid-row-end: 6;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      &:hover {
+        background-color: #4e9ed4;
+      }
+    }
+  }
+
+
+  .Result {
+    .Success {
+      padding-top: 20px;
+      color: black;
+    }
+
+    .Error {
+      color: red;
+    }
+  }
+}
